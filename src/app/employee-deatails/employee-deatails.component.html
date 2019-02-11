@@ -1,0 +1,28 @@
+<div class="container ">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="table-responsive">
+        <table class="table  table-bordered table-striped ">
+          <thead>
+            <tr>
+              <th>EmployeeId</th>
+              <th>EmployeeName</th>
+              <th>Designation</th>
+              <th>DOB</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of EmployeeData">
+              <td>{{employee.EmployeeId}}</td>
+              <td>{{employee.EmployeeName}}</td>
+              <td>{{employee.Designation}}</td>
+              <td>{{employee.DOB}}</td>
+              <td>{{employee.salary}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
